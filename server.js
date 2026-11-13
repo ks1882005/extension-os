@@ -550,12 +550,12 @@ ${JSON.stringify(evaluationInput)}
 // START SERVER
 // =====================================
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
 
     console.log(
-        `Extension OS server running at http://localhost:${PORT}`
+        `Extension OS server running on port ${PORT}`
     );
 
 });

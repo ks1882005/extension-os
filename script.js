@@ -1,7 +1,7 @@
 // =====================================
 // ELEMENTS
 // =====================================
-
+const API_BASE_URL = "http://localhost:3000";
 const promptInput = document.getElementById("promptInput");
 const charCount = document.getElementById("charCount");
 const compareBtn = document.getElementById("compareBtn");
