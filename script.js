@@ -1,7 +1,7 @@
 // =====================================
 // ELEMENTS
 // =====================================
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://extension-os.onrender.com/";
 const promptInput = document.getElementById("promptInput");
 const charCount = document.getElementById("charCount");
 const compareBtn = document.getElementById("compareBtn");
@@ -174,7 +174,7 @@ async function requestAI(endpoint, prompt) {
     try {
 
         const response = await fetch(
-            `http://localhost:3000${endpoint}`,
+            `https://extension-os.onrender.com/${endpoint}`,
             {
                 method: "POST",
 
@@ -240,7 +240,7 @@ async function requestRecommendation(
 ) {
 
     const response = await fetch(
-        "http://localhost:3000/api/recommend",
+        "https://extension-os.onrender.com//api/recommend",
         {
             method: "POST",
 
